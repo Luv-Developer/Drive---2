@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello <%= user.data.username  %>👋</h1>
+    <form action = "/drive" method = "post" enctype="multipart/form-data">
+    <input type = "file" name = "files"><br><br>
+    <button>Submit</button>
+    </form>
+</body>
+</html>
